@@ -1,0 +1,17 @@
+﻿<h2>{{title}}</h2>
+<h3>{{repo.name}}</h3>
+<div>
+    <label>Issues</label>{{repo.open_issues_count}}
+</div>
+<div>
+    <ul>
+        <li ng-repeat="assignee in repo.assignees">
+            {{assignee.login}}
+            <img ng-src="{{assignee.avatar_url}}" title="{{assignee.login}}" />
+        </li>
+    </ul>
+</div>
+
+<a href="#!/main">Back to search</a>
+<br />
+<a href="#!/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>

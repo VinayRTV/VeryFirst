@@ -1,0 +1,12 @@
+﻿<div>
+    {{countdown}}
+    <form name="searchForm" class="form-horizontal" ng-submit="searchForm.$valid && search(userName)" novalidate>
+        <div class="form-group">
+            <div class="tt-container">
+                <label>UserName:</label>
+                <input type="text" class="form-control" name="txtName" id="txtName" ng-model="userName" required />
+            </div>
+        </div>
+        <button class="btn btn-primary" id="btnSearch" name="btnSearch" type="submit">Search</button>
+    </form>
+</div>
